@@ -48,7 +48,7 @@ router.post(("/"), [
                 res.cookie("token", token, {
                     httpOnly: true,
                     secure: true,      // Set to true in production with HTTPS
-                    sameSite: "lax",    // Use "none" with secure: true for cross-site
+                    sameSite: "none",    // Use "none" with secure: true for cross-site
                     maxAge: 10 * 24 * 60 * 60 * 1000, // 10 days
                 });
 

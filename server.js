@@ -11,7 +11,7 @@ const { Server } = require("socket.io");
 
 const io = new Server(server, {
     cors: {
-        origin: "https://chatify-react-5y2p.vercel.app/",
+        origin: "https://chatify-react-5y2p.vercel.app",
         credentials: true
     }
 });
@@ -36,7 +36,7 @@ io.on("connection", (socket) => {
 app.use(cookieParser());
 
 app.use(cors({
-    origin: "http://localhost:3000",
+    origin: "https://chatify-react-5y2p.vercel.app",
     credentials: true
 }));
 
